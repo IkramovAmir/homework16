@@ -1,0 +1,29 @@
+.about__cards{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 100px 0px;
+}
+.about__card{
+   box-shadow: 5px 6px 10px gray;
+   padding: 20px 30px;
+   border-radius:15px;
+}
+.about__card img{
+    padding: 10px 0px;
+}
+@media(max-width:1285px){
+    .about__cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:300px){
+    .about__card{
+        width: 100%;
+    }
+    .about__card p{
+        text-align: center;
+        font-size: 13px;
+    }
+}

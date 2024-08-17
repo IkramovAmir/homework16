@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    cursor: pointer;
+}
+.container{
+    max-width: 85%;
+    width: 1440px;
+    margin: 0 auto;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-color: #F05670;
+    color: white;
+}

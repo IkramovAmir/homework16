@@ -1,0 +1,45 @@
+.august{
+    background-color: rgb(235, 255, 255);
+}
+.august__infos{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+.august__left-desc{
+    color: red;
+}
+.august__left-title{
+    font-size: 36px ;
+    width: 520px;
+    padding: 30px 0px;
+}
+@media(max-width:1150px){
+    .august__infos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .august__right-img img{
+        width: 100%;
+    }
+    .august__left-desc{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .august__left-title{
+        width: 100%;
+        text-align: center;
+        font-size: 23px;
+    }
+}
+@media(max-width:300px){
+    .august__left-desc{
+        font-size:12px;
+    }
+    .august__left-title{
+        font-size: 15px;
+    }
+}

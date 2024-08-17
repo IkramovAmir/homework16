@@ -1,0 +1,106 @@
+.header__nav{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: px px 10px gray;
+}
+.header__nav-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    z-index: 999;
+}
+.header__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 70px;
+    cursor: pointer;
+}
+.header__nav-number{
+    color: #1E959B;
+}
+.header__nav-btn{
+    padding: 18px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.header__nav-btn:hover{
+    background-color: #F05670;
+    color: white;
+}
+.header__btn-bar{
+    display: none;
+}
+.header__list-close{
+    display: none;
+}
+/* .header__nav-btn-close:hover{
+    background-color: white;
+    color: black;
+} */
+@media(max-width:1100px){
+    .header__nav-infos{
+        position: relative;
+    }
+    .header__list{
+        position: relative;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        width: 30%;
+        box-shadow: 0px 0px 10px skyblue;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.9s;
+    }
+    .header__nav-btns{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .header__btn-bar{
+        display: block;
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+    }
+    .header__list-close{
+        display: block;
+        font-size: 25px;
+        color: red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0px 15px;
+    }
+    .header__list-close:hover{
+        background-color: red;
+        color: white;
+    }
+
+    .header__list-show{
+        left: 0;
+        transition: 0.5s;
+    }
+}
+@media(max-width:550px){
+    .header__nav-logo img{
+        width: 100%;
+    }
+    .header__nav-btn{
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+}
+@media(max-width:350px){
+    .header__nav-infos{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        
+    }
+}

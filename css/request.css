@@ -1,0 +1,32 @@
+.request{
+    background-color: rgb(205, 228, 247);
+    margin: 20px 0px;
+}
+.request__infos{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 100px 0px;
+    align-items: center;
+}
+.request__right-btn{
+    padding: 30px 70px;
+    border-radius: 17px;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media(max-width:1000px){
+    .request__infos{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:500px){
+    .request__right-btn{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    .request__left-img img{
+        width: 100%;
+    }
+}
+
